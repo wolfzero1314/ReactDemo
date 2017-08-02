@@ -2,11 +2,12 @@
 
 import React from "react";
 
+import style from "./common.css";
 
 class Component extends React.Component{
     render(){
         return (
-            <div>Hello World!</div>
+            <div className="color">Hello World!</div>
         )
     }
 }
