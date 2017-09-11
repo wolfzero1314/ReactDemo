@@ -26,7 +26,12 @@ module.exports = {//注意这里是exports不是export
                 test: /\.css$/,
                 exclude: /node_modules/,
                 loader: ['style-loader','css-loader']
-            }
+            },
+            {
+                test: /\.png$/,
+                loader: "url-loader",
+                query: { mimetype: "image/png" }
+            },
         ]
     },
     plugins: [
